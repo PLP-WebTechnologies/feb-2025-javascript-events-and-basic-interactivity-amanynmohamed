@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Handling & Interactive Elements</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>JavaScript Event Handling & Interactive Elements</h1>
+
+    <!-- Event Handling Section -->
+    <button id="colorButton">Click me to change color</button>
+    <button id="textButton">Hover over me to change text</button>
+    <input type="text" id="keypressInput" placeholder="Type something...">
+    <button id="secretButton">Double Click Me!</button>
+
+   <!-- Interactive Elements Section -->
+<div class="tabs">
+    <button class="tab" onclick="openTab('tab1')">Tab 1</button>
+    <button class="tab" onclick="openTab('tab2')">Tab 2</button>
+    <button class="tab" onclick="openTab('tab3')">Tab 3</button>
+</div>
+
+<div class="tab-content" id="tab1">This is Tab 1 content. Add some images, videos, or anything here!</div>
+<div class="tab-content" id="tab2">This is Tab 2 content. Make it interesting!</div>
+<div class="tab-content" id="tab3">This is Tab 3 content. Maybe add a small gallery?</div>
+
+    <!-- Form Section -->
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8">
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<div class="tabs">
+    <div class="tab active">Tab 1</div>
+    <div class="tab">Tab 2</div>
+    <div class="tab">Tab 3</div>
+</div>
+
+<div class="tab-content active">
+    <p>This is Tab 1 content. Add some images, videos, or anything here.</p>
+</div>
+<div class="tab-content">
+    <p>This is Tab 2 content. Make it interesting!</p>
+</div>
+<div class="tab-content">
+    <p>This is Tab 3 content. Maybe add a small gallery.</p>
+</div>
